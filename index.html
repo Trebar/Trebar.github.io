@@ -1,7 +1,74 @@
-<!DOCTYPE html>
-<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="interface.css" />
+</head>
+
+<header style = "text-align:center">Title will go here</header>
+<div class ="container">
+<!-- Stats Tab-->
+	<div class = "stats">Stats Go Here
+		</br>
+		Gold: <span id="goldCounter">0</span> <!--TODO: Syle this. Also hide things-->
+		</br>
+		Knowledge: <span id="knowledgeCounter">0</span>
+		<button id = "saveButton" type="button" class = "menuButton">Save Game</button>
+		<button id = "loadButton" type="button" class = "menuButton">Load Game</button>
+		<button id = "deleteButton" type="button" class = "menuButton">Delete Save</button>
+	</div>
+	
+
+<!-- Menu Tab-->
+	<div class = "leftMenu">Menu Goes Here
+		<button id = "storyButton" type="button" class = "menuButton">Story</button> 
+		<button id = "studyButton" type="button" class = "reservedMenuButton">Reserved1</button>
+		<button id = "researchButton" type=button" class = "reservedMenuButton">Reserved2</button>
+		<button id = "flowersButton" type="button" class = "reservedMenuButton">Reserved3</button>
+		<button id = "storeButton" type="button" class = "reservedMenuButton">Reserved4</button>
+		<button id = "nextFeatureButton" type="button" class = "reservedMenuButton">Reserved5</button>
+	</div>
+	
+<!-- Game Tabs -->
+
+	<div class = "mainScreen">Game Goes Here
+	<!--Page for Story Events-->
+		<div id = "storyPage">Story Goes Here
+			<button id = "backStory">Left</button>
+			<button id = "forwardStory">Right</button>
+			<!-- TODO maybe reformat this?-->
+			<div name = "storyPage" id= 1>Today is the day. After 5 years of research, you are ready to present your final project to the Academy of Magic and become licensed as a credentialed mage. Although you have trained in the basics of all general studies, the emphasis on your research has been rather niche: you have been studying magical horticulture. Your first project, a flowers that could produce pure gold, was deemed innovatively interesting but not of sufficient impact to promote you past the rank of journeyman due to the number of other methods mages have available for more quickly producing pure gold in larger quantities when necessary. Given how important gems are to the process of focusing magical energies, you took on the task of devising a method to grow magical plants capable of sprouting pure stones for use in rituals. You were able to refine plants to produce each of the four common gems used in spells: rubies, emeralds, sapphires, and topaz. Then, through a long program of magical manipulation and careful breeding, you were able to refine a plant that could generate that most sought after gem: a diamond.</div>
+			<div name = "storyPage" id = 2 hidden = true>Long story short: Your plants gets stolen on the way there. You go back to your lab; your notes and other plants also got stolen. Weird. Guess you'll have to start from scratch. TODO: Update this text</div>
+			<div name = "storyPage" id = 3 hidden = true>Guess you better start to <b>STUDY</b> to recreate your notes</div>
+		</div>
+	<!--Page for Study Minigame-->
+		<div id = "studyPage" hidden=true>Study Minigame will go here
+			<div contenteditable id = "snippetText">
+				<!--<span id = "typedText" color = "green"></span>
+				<div id = "snippetText"></div>-->
+			</div>
+		</div>
+	<!--Page for Research Options-->
+		<div id = "researchPage" hidden=true>Research Options will go in here
+			<button id = "buyGoldFlower" type="button">Recreate a Gold Flower (3000 research)</button>
+		</div>
+	<!--Page for flowers or whatever the clicker widget becomes-->
+		<div id = "flowersPage" hidden=true>
+			<br>
+				<button id="goldFlower" type="button" class = "goldFlower1">Harvest</button>
+			<br/>
+		</div>
+	<!--Page for the store. For buying things!-->	
+		<div id = "storePage" hidden = true>
+			<button id="buyflowersPicker" type="button">Hire someone to pick your flowers (10 Gold)</button>
+			<button id="buyNextFeature" type="button">Buy the next feature! (100 Gold)</button>
+		</div>	
+	<!--Page for the next feature. Just a test at this time-->
+		<div id = "nextFeaturePage" hidden = true>
+			<button>Skipping a few features. This bit will eventual be an RPG! But for now it's just a concept</button>
+		</div>
+	</div>
+
+	
+</div>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<script type="text/javascript" src="main.js"></script>
 </body>
-</html>
