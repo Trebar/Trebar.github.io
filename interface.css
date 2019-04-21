@@ -1,0 +1,49 @@
+.container{ /* flex container for layout*/
+	height: 100%;
+	display: flex;
+}
+
+.stats{ /*Stats menu*/
+	width: 20%;
+	background: FFA600;
+	border: 5px solid #542102;
+}
+
+.leftMenu{ /*Button Menu*/
+	width: 20%;
+	background: AAFF11;
+	border: 5px solid #542102;
+}
+
+.menuButton{
+	width:100%;
+	height:10%;
+	border: 1px solid #ffffff;
+	text-transform: capitalize;
+}
+
+.mainScreen{
+	width:60%;
+	border: 5px solid #542102;
+}
+
+.reservedMenuButton{
+	width:100%;
+	height:10%;
+	border: 1px solid #ffffff;
+}
+
+/* Gold button Full */
+.goldFlower1{
+	background-color: FFD700;
+	text-align: center;
+	width: 100px;
+	height: 50px;
+} 
+/* Gold button Half */
+.goldFlower2{
+	background-color: FFD700;
+	text-align: center;
+	width: 100px;
+	height: 25px;
+} 
